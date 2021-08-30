@@ -4,7 +4,7 @@
 
 # WordPress Front-end Challenge
 
-Desafio WordPress para programadores front-end interessados em trabalhar na Fuerza.
+Desafio para programadores front-end interessados em trabalhar na Fuerza.
 
 # Overview
 Esste desafio irá testar:
