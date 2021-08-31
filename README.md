@@ -19,6 +19,7 @@ Precisamos que seja desenvolvido a home page de Jam City e que após desenvolvid
 # Layout
 - Desktop: [Adobe XD](https://xd.adobe.com/view/74e773e4-08ee-4a61-8f22-405d0b42bc74-21b4/)
 - Mobile: [Adobe XD](https://xd.adobe.com/view/ca020f33-03c7-40a0-9f6d-adaba025ab58-9f51/)
+- Imagens: [Dropbox](https://www.dropbox.com/sh/1pdiygw3ztgamst/AAB5yEciP62SpskF0tIhN7KMa?dl=0)
 
 ## Dúvidas
 
