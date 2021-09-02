@@ -1,0 +1,109 @@
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 102px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section .container {
+    height: 100%;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 5;
+    max-width: 1020;
+    margin: unset;
+}
+
+.hero-section .custom-title {
+    position: relative;
+    line-height: 37px;
+    font-size: 44px;
+    text-shadow: 2px 3px 0 var(--secondary);
+}
+
+.hero-section .custom-title:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 80px;
+    height: 10px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.hero-section .description {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.hero-section .bg {
+    position: absolute;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    max-height: 600px;
+}
+
+.hero-section .bg.pattern {
+    z-index: 1;
+    top: -100px;
+    right: -400px;
+    height: 1200px;
+    max-height: unset;
+}
+
+.hero-section .bg.characters {
+    z-index: 2;
+}
+
+/* Mobile */
+@media screen and (min-width: 640px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 1024px) {
+    .hero-section {
+        padding-top: 80px;
+        background-image: url("../assets/hero-section/hero-section-bg.png");
+    }
+
+    .hero-section .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section .content {
+        max-width: 1020px;
+        padding: 0 60px;
+    }
+
+    .hero-section .custom-title {
+        line-height: 94px;
+        font-size: 120px;
+        text-shadow: 4px 4px 0 var(--secondary), 8px 8px 0 #fff;
+    }
+
+    .hero-section .custom-title:after {
+        bottom: -60px;
+        width: 102px;
+        height: 18px;
+    }
+
+    .hero-section .description {
+        width: 591px;
+        margin-top: 100px;
+        font-size: 28px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+}
