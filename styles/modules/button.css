@@ -4,11 +4,22 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 160px;
+    width: 164px;
     height: 48px;
     font-size: 18px;
     font-weight: 900;
     color: #fff;
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../assets/button.svg");
+    background-size: cover;
 }
 
 .custom-button > p {
@@ -16,63 +27,6 @@
     position: relative;
     display: block;
     transition: all 0.3s ease;
-}
-
-.custom-button > .svg {
-    position: absolute;
-}
-
-.custom-button > span {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    /* clip-path: url("../../assets/button.svg"); */
-    clip-path: url(#buttonClip);
-    background-color: var(--primary);
-}
-
-.custom-button::after {
-    content: "Let's Go";
-    position: absolute;
-    z-index: 6;
-    top: 50%;
-    left: 50%;
-    display: block;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%) scale(0);
-    transition: all 0.3s ease;
-}
-
-.custom-button > span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: var(--dark);
-    border-radius: 99px;
-    transform: scale(1.3);
-    transition: all 0.3s ease;
-}
-
-.custom-button:hover > p {
-    opacity: 0;
-    transform: scale(0);
-}
-
-.custom-button:hover::after {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-.custom-button:hover > span::before {
-    right: 0;
 }
 
 /* Mobile */
@@ -87,8 +41,68 @@
         font-size: 30px;
     }
 
+    .custom-button::before {
+        display: none;
+    }
+
+    .custom-button > .svg {
+        position: absolute;
+    }
+
+    .custom-button > .clip-path {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        clip-path: url(#buttonClip);
+        background-color: var(--primary);
+    }
+
     .custom-button::after {
         font-size: 30px;
+    }
+
+    .custom-button::after {
+        content: "Let's Go";
+        position: absolute;
+        z-index: 6;
+        top: 50%;
+        left: 50%;
+        display: block;
+        font-size: 28px;
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale(0);
+        transition: all 0.3s ease;
+    }
+
+    .custom-button > .clip-path::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: var(--dark);
+        border-radius: 99px;
+        transform: scale(1.3);
+        transition: all 0.3s ease;
+    }
+
+    .custom-button:hover > p {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .custom-button:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+
+    .custom-button:hover > .clip-path::before {
+        right: 0;
     }
 }
 
