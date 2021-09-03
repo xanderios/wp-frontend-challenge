@@ -3,6 +3,10 @@ $(".menu-toggle").on("click", function () {
     $(".header .menu").toggleClass("active");
 });
 
+$("#closeAddress").on("click", function () {
+    $(".footer .card").addClass("closed");
+});
+
 /**
  * Replace all SVG images with inline SVG
  */

@@ -24,13 +24,6 @@
 
 /* Tablet */
 @media screen and (min-width: 1024px) {
-    .social-links-component li {
-        transition: color 0.2s;
-    }
-
-    .social-links-component li:hover {
-        color: var(--primary);
-    }
 }
 
 /* Desktop */

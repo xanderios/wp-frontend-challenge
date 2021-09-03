@@ -21,7 +21,7 @@
     box-shadow: 12px 12px 30px #19191926;
 }
 
-.card .game-img {
+.featured-section .card .game-img {
     position: relative;
     overflow: hidden;
     height: 300px;
@@ -31,34 +31,34 @@
     border-radius: 20px;
 }
 
-.card .shadow,
-.card .character {
+.featured-section .card .shadow,
+.featured-section .card .character {
     position: absolute;
     max-width: unset;
     max-height: unset;
 }
 
-.card .character {
+.featured-section .card .character {
     transition: transform 0.3s ease;
 }
 
-.card:hover .character {
+.featured-section .card:hover .character {
     transform: scale(1.08) translate(-10px, -10px);
 }
 
 /* Cookie Jam Blast */
 
-.card.cookie-jam-blast .game-img {
+.featured-section .card.cookie-jam-blast .game-img {
     background-image: url("../assets/games/cookie-jam-blast-bg.png");
 }
 
-.card.cookie-jam-blast .shadow {
+.featured-section .card.cookie-jam-blast .shadow {
     bottom: -140px;
     left: 50px;
     height: 430px;
 }
 
-.card.cookie-jam-blast .character {
+.featured-section .card.cookie-jam-blast .character {
     bottom: -120px;
     left: 20px;
     height: 430px;
@@ -66,17 +66,17 @@
 
 /* Panda Pop */
 
-.card.panda-pop .game-img {
+.featured-section .card.panda-pop .game-img {
     background-image: url("../assets/games/panda-pop-bg.png");
 }
 
-.card.panda-pop .shadow {
+.featured-section .card.panda-pop .shadow {
     bottom: -30px;
     left: 0;
     height: 290px;
 }
 
-.card.panda-pop .character {
+.featured-section .card.panda-pop .character {
     bottom: -1px;
     left: 10px;
     height: 260px;
@@ -84,17 +84,17 @@
 
 /* Cookie Jam */
 
-.card.cookie-jam .game-img {
+.featured-section .card.cookie-jam .game-img {
     background-image: url("../assets/games/cookie-jam-bg.png");
 }
 
-.card.cookie-jam .shadow {
+.featured-section .card.cookie-jam .shadow {
     bottom: -150px;
     left: 0px;
     height: 460px;
 }
 
-.card.cookie-jam .character {
+.featured-section .card.cookie-jam .character {
     bottom: -140px;
     left: -10px;
     height: 460px;
@@ -102,14 +102,14 @@
 
 /* Game Details */
 
-.card .title {
+.featured-section .card .title {
     margin-top: 4px;
     font-size: 20px;
     font-weight: 900;
     text-align: center;
 }
 
-.card .details {
+.featured-section .card .details {
     display: block;
     margin-bottom: 10px;
     font-size: 12px;
@@ -127,30 +127,30 @@
 /* Mobile */
 @media screen and (min-width: 640px) {
     /* Cookie Jam Blast */
-    .card.cookie-jam-blast .shadow {
+    .featured-section .card.cookie-jam-blast .shadow {
         left: 220px;
     }
 
-    .card.cookie-jam-blast .character {
+    .featured-section .card.cookie-jam-blast .character {
         left: 190px;
     }
 
     /* Panda Pop */
 
-    .card.panda-pop .shadow {
+    .featured-section .card.panda-pop .shadow {
         left: 130px;
     }
 
-    .card.panda-pop .character {
+    .featured-section .card.panda-pop .character {
         left: 140px;
     }
 
     /* Cookie Jam */
-    .card.cookie-jam .shadow {
+    .featured-section .card.cookie-jam .shadow {
         left: 150px;
     }
 
-    .card.cookie-jam .character {
+    .featured-section .card.cookie-jam .character {
         left: 140px;
     }
 }
@@ -167,35 +167,35 @@
         gap: 36px;
     }
 
-    .card .game-img {
+    .featured-section .card .game-img {
         height: 300px;
     }
 
     /* Cookie Jam Blast */
-    .card.cookie-jam-blast .shadow {
+    .featured-section .card.cookie-jam-blast .shadow {
         left: 20px;
     }
 
-    .card.cookie-jam-blast .character {
+    .featured-section .card.cookie-jam-blast .character {
         left: -10px;
     }
 
     /* Panda Pop */
 
-    .card.panda-pop .shadow {
+    .featured-section .card.panda-pop .shadow {
         left: -10px;
     }
 
-    .card.panda-pop .character {
+    .featured-section .card.panda-pop .character {
         left: 0px;
     }
 
     /* Cookie Jam */
-    .card.cookie-jam .shadow {
+    .featured-section .card.cookie-jam .shadow {
         left: -20px;
     }
 
-    .card.cookie-jam .character {
+    .featured-section .card.cookie-jam .character {
         left: -40px;
     }
 
@@ -205,12 +205,12 @@
 
     /* Game Details */
 
-    .card .title {
+    .featured-section .card .title {
         margin-top: 4px;
         font-size: 30px;
     }
 
-    .card .details {
+    .featured-section .card .details {
         margin-bottom: 15px;
         font-size: 18px;
     }
@@ -219,74 +219,74 @@
 /* Desktop */
 @media screen and (min-width: 1280px) {
     /* Cookie Jam Blast */
-    .card.cookie-jam-blast .shadow {
+    .featured-section .card.cookie-jam-blast .shadow {
         left: 80px;
     }
 
-    .card.cookie-jam-blast .character {
+    .featured-section .card.cookie-jam-blast .character {
         left: 50px;
     }
 
     /* Panda Pop */
 
-    .card.panda-pop .shadow {
+    .featured-section .card.panda-pop .shadow {
         left: 0px;
     }
 
-    .card.panda-pop .character {
+    .featured-section .card.panda-pop .character {
         left: 10px;
     }
 
     /* Cookie Jam */
-    .card.cookie-jam .shadow {
+    .featured-section .card.cookie-jam .shadow {
         left: 20px;
     }
 
-    .card.cookie-jam .character {
+    .featured-section .card.cookie-jam .character {
         left: 0px;
     }
 }
 
 /* Extra Large */
 @media screen and (min-width: 1536px) {
-    .card .game-img {
+    .featured-section .card .game-img {
         height: 450px;
     }
 
     /* Cookie Jam Blast */
-    .card.cookie-jam-blast .shadow {
+    .featured-section .card.cookie-jam-blast .shadow {
         bottom: -180px;
         left: 70px;
         height: 600px;
     }
 
-    .card.cookie-jam-blast .character {
+    .featured-section .card.cookie-jam-blast .character {
         bottom: -150px;
         left: 20px;
         height: 600px;
     }
 
     /* Panda Pop */
-    .card.panda-pop .shadow {
+    .featured-section .card.panda-pop .shadow {
         bottom: -10px;
         left: 10px;
         height: 380px;
     }
 
-    .card.panda-pop .character {
+    .featured-section .card.panda-pop .character {
         bottom: -1px;
         left: 10px;
         height: 380px;
     }
 
     /* Cookie Jam */
-    .card.cookie-jam .shadow {
+    .featured-section .card.cookie-jam .shadow {
         bottom: -200px;
         left: 20px;
         height: 590px;
     }
 
-    .card.cookie-jam .character {
+    .featured-section .card.cookie-jam .character {
         bottom: -200px;
         left: 0;
         height: 600px;
@@ -294,11 +294,11 @@
 
     /* Game Details */
 
-    .card .title {
+    .featured-section .card .title {
         font-size: 38px;
     }
 
-    .card .details {
+    .featured-section .card .details {
         font-size: 20px;
     }
 }
