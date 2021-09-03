@@ -1,0 +1,45 @@
+.social-links-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-links-component .svg {
+    width: 32px;
+    height: 32px;
+}
+
+.social-links-component ul li {
+    display: block;
+}
+
+.social-links-component a {
+    display: flex;
+}
+
+/* Mobile */
+@media screen and (min-width: 640px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 1024px) {
+    .social-links-component li {
+        transition: color 0.2s;
+    }
+
+    .social-links-component li:hover {
+        color: var(--primary);
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    .social-links-component {
+        gap: 16px;
+    }
+}
+
+/* XL Desktop */
+@media screen and (min-width: 1536px) {
+}
