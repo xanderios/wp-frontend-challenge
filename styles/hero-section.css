@@ -41,7 +41,7 @@
     font-weight: 600;
 }
 
-.hero-section .custom-button {
+.hero-section .button-component {
     margin-top: 30px;
 }
 
@@ -51,7 +51,7 @@
     bottom: 0;
     width: auto;
     height: auto;
-    max-height: 600px;
+    max-height: 500px;
     opacity: 1;
 }
 
@@ -106,8 +106,12 @@
         font-size: 28px;
     }
 
-    .hero-section .custom-button {
+    .hero-section .button-component {
         margin-top: 50px;
+    }
+
+    .hero-section .bg {
+        max-height: 800px;
     }
 }
 

@@ -1,4 +1,4 @@
-.custom-button {
+.button-component {
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
     color: #fff;
 }
 
-.custom-button::before {
+.button-component::before {
     content: "";
     position: absolute;
     top: 0;
@@ -22,7 +22,7 @@
     background-size: cover;
 }
 
-.custom-button > p {
+.button-component > p {
     z-index: 6;
     position: relative;
     display: block;
@@ -35,21 +35,21 @@
 
 /* Tablet */
 @media screen and (min-width: 1024px) {
-    .custom-button {
+    .button-component {
         width: 275px;
         height: 80px;
         font-size: 30px;
     }
 
-    .custom-button::before {
+    .button-component::before {
         display: none;
     }
 
-    .custom-button > .svg {
+    .button-component > .svg {
         position: absolute;
     }
 
-    .custom-button > .clip-path {
+    .button-component > .clip-path {
         display: block;
         position: absolute;
         top: 0;
@@ -61,11 +61,11 @@
         background-color: var(--primary);
     }
 
-    .custom-button::after {
+    .button-component::after {
         font-size: 30px;
     }
 
-    .custom-button::after {
+    .button-component::after {
         content: "Let's Go";
         position: absolute;
         z-index: 6;
@@ -78,7 +78,7 @@
         transition: all 0.3s ease;
     }
 
-    .custom-button > .clip-path::before {
+    .button-component > .clip-path::before {
         content: "";
         position: absolute;
         top: 0;
@@ -91,17 +91,17 @@
         transition: all 0.3s ease;
     }
 
-    .custom-button:hover > p {
+    .button-component:hover > p {
         opacity: 0;
         transform: scale(0);
     }
 
-    .custom-button:hover::after {
+    .button-component:hover::after {
         opacity: 1;
         transform: translateX(-50%) translateY(-50%) scale(1);
     }
 
-    .custom-button:hover > .clip-path::before {
+    .button-component:hover > .clip-path::before {
         right: 0;
     }
 }

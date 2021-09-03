@@ -1,6 +1,6 @@
-.title-component {
-    font-weight: 900;
-    font-size: 35px;
+.description-component {
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -10,8 +10,10 @@
 
 /* Tablet */
 @media screen and (min-width: 1024px) {
-    .title-component {
-        font-size: 82px;
+    .description-component {
+        max-width: 868px;
+        margin: 0 auto;
+        font-size: 28px;
     }
 }
 

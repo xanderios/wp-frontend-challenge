@@ -2,17 +2,8 @@
     padding: 30px 0 68px;
 }
 
-.featured-section h1.title {
-    font-size: 35px;
-    text-align: center;
-}
-
-.featured-section p.description {
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-    max-width: 868px;
-    text-align: center;
+.featured-section .description-component {
+    margin-top: 8px;
 }
 
 .featured-section .game-cards {
@@ -23,28 +14,28 @@
 }
 
 .featured-section .game-cards .card {
-    background-color: #fff;
-    box-shadow: 12px 12px 30px #19191926;
-    width: 100%;
-    border-radius: 20px;
     overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 30px #19191926;
 }
 
 .card .game-img {
     position: relative;
-    height: 300px;
     overflow: hidden;
-    border-radius: 20px;
-    background-size: cover;
+    height: 300px;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 .card .shadow,
 .card .character {
+    position: absolute;
     max-width: unset;
     max-height: unset;
-    position: absolute;
 }
 
 .card .character {
@@ -62,15 +53,15 @@
 }
 
 .card.cookie-jam-blast .shadow {
-    height: 430px;
-    left: 50px;
     bottom: -140px;
+    left: 50px;
+    height: 430px;
 }
 
 .card.cookie-jam-blast .character {
-    height: 430px;
-    left: 20px;
     bottom: -120px;
+    left: 20px;
+    height: 430px;
 }
 
 /* Panda Pop */
@@ -80,15 +71,15 @@
 }
 
 .card.panda-pop .shadow {
-    height: 290px;
-    left: 0;
     bottom: -30px;
+    left: 0;
+    height: 290px;
 }
 
 .card.panda-pop .character {
-    height: 260px;
-    left: 10px;
     bottom: -1px;
+    left: 10px;
+    height: 260px;
 }
 
 /* Cookie Jam */
@@ -98,36 +89,36 @@
 }
 
 .card.cookie-jam .shadow {
-    height: 460px;
     bottom: -150px;
     left: 0px;
+    height: 460px;
 }
 
 .card.cookie-jam .character {
-    height: 460px;
     bottom: -140px;
     left: -10px;
+    height: 460px;
 }
 
 /* Game Details */
 
 .card .title {
     margin-top: 4px;
-    text-align: center;
     font-size: 20px;
     font-weight: 900;
+    text-align: center;
 }
 
 .card .details {
-    margin-bottom: 10px;
     display: block;
-    text-align: center;
-    color: var(--primary);
+    margin-bottom: 10px;
     font-size: 12px;
     font-weight: 900;
+    color: var(--primary);
+    text-align: center;
 }
 
-.featured-section .custom-button {
+.featured-section .button-component {
     margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -170,16 +161,6 @@
         padding: 60px 0 100px;
     }
 
-    .featured-section h1.title {
-        font-size: 82px;
-    }
-
-    .featured-section p.description {
-        font-size: 28px;
-        max-width: 868px;
-        margin: 0 auto;
-    }
-
     .featured-section .game-cards {
         flex-direction: row;
         margin-top: 64px;
@@ -218,7 +199,7 @@
         left: -40px;
     }
 
-    .featured-section .custom-button {
+    .featured-section .button-component {
         margin-top: 100px;
     }
 
@@ -274,41 +255,41 @@
 
     /* Cookie Jam Blast */
     .card.cookie-jam-blast .shadow {
-        height: 600px;
         bottom: -180px;
         left: 70px;
+        height: 600px;
     }
 
     .card.cookie-jam-blast .character {
-        height: 600px;
         bottom: -150px;
         left: 20px;
+        height: 600px;
     }
 
     /* Panda Pop */
     .card.panda-pop .shadow {
-        height: 380px;
         bottom: -10px;
         left: 10px;
+        height: 380px;
     }
 
     .card.panda-pop .character {
-        height: 380px;
         bottom: -1px;
         left: 10px;
+        height: 380px;
     }
 
     /* Cookie Jam */
     .card.cookie-jam .shadow {
-        height: 590px;
         bottom: -200px;
         left: 20px;
+        height: 590px;
     }
 
     .card.cookie-jam .character {
-        height: 600px;
         bottom: -200px;
         left: 0;
+        height: 600px;
     }
 
     /* Game Details */
