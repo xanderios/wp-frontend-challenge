@@ -84,7 +84,7 @@
 .header .menu .background {
     position: fixed;
     top: 0;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
     display: block;
     overflow: hidden;
