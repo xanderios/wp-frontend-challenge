@@ -181,10 +181,12 @@
     .footer .nav-menu .anchor {
         width: 50%;
         font-weight: 900;
+        margin-top: 0;
     }
 
     .footer .nav-menu .legal {
         width: 50%;
+        margin-top: 0;
     }
 
     .footer .nav-menu .copyright {
