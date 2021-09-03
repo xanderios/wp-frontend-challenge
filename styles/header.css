@@ -101,6 +101,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 36px 20px 20px;
     align-items: center;
     font-size: 25px;
     font-weight: 900;
@@ -115,7 +116,6 @@
 
 .header .menu .nav-menu {
     text-align: center;
-    padding: 36px 20px;
 }
 
 .header .menu .nav-menu li:not(:last-child) {
@@ -128,19 +128,7 @@
 }
 
 .header .menu .social-links-component {
-    position: sticky;
-    padding: 16px 0;
     gap: 16px;
-    box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--dark);
-    bottom: 0;
-    width: 100%;
-    transform: translateX(-100%);
-    display: flex;
-    justify-content: center;
-    right: 0;
-    left: 0;
-    transition: transform 0.3s ease;
 }
 
 .header .menu.active .social-links-component {
