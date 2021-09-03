@@ -71,6 +71,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    height: 100%;
     width: 250px;
     pointer-events: none;
 }
@@ -99,7 +100,6 @@
 .header .menu .content {
     position: relative;
     display: flex;
-    padding: 36px 20px;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
@@ -115,6 +115,7 @@
 
 .header .menu .nav-menu {
     text-align: center;
+    padding: 36px 20px;
 }
 
 .header .menu .nav-menu li:not(:last-child) {
@@ -127,7 +128,23 @@
 }
 
 .header .menu .social-links-component {
+    position: sticky;
+    padding: 16px 0;
     gap: 16px;
+    box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--dark);
+    bottom: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.header .menu.active .social-links-component {
+    transform: translateX(0);
 }
 
 .header .menu .social-links-component .svg {
